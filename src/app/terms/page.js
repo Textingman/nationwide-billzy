@@ -31,7 +31,7 @@ export default function Terms() {
         <p>Reply STOP to any message to cancel. You will receive a confirmation message and will no longer receive texts from that SMS Program.</p>
 
         <h3>Help</h3>
-        <p>Reply HELP for help, or contact us at: <a href="mailto:support@billzy.com">support@billzy.com</a></p>
+        <p>Reply HELP for help, or contact us at: <a href="mailto:support@billzy1.com">support@billzy1.com</a></p>
 
         <h3>Costs & carriers</h3>
         <p>Message and data rates may apply. Carriers are not liable for delayed or undelivered messages.</p>
@@ -131,7 +131,7 @@ export default function Terms() {
         <p>Nothing prevents either party from seeking injunctive relief for misuse of intellectual property or confidential information.</p>
 
         <h3>2.12 DMCA / Copyright Complaints</h3>
-        <p>If you believe content on the Site infringes your copyright, send a DMCA notice to: <a href="mailto:copyright@billzy.com">copyright@billzy.com</a></p>
+        <p>If you believe content on the Site infringes your copyright, send a DMCA notice to: <a href="mailto:copyright@billzy1.com">copyright@billzy1.com</a></p>
         <p>Include the required information under 17 U.S.C. §512.</p>
 
         <h3>2.13 Links to Third Parties</h3>
@@ -141,7 +141,7 @@ export default function Terms() {
         <p>We may update these Terms at any time. The "Last Updated" date will reflect changes. Continued use of the Services after changes means you accept the updated Terms.</p>
 
         <h3>2.15 Contact</h3>
-        <p>Questions about these Terms: <a href="mailto:support@billzy.com">support@billzy.com</a></p>
+        <p>Questions about these Terms: <a href="mailto:support@billzy1.com">support@billzy1.com</a></p>
       </div>
     </section>
   );

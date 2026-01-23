@@ -127,7 +127,7 @@ export default function Privacy() {
 
         <h2>18. Contact Us</h2>
         <p>If you have questions about this Privacy Policy or your Personal Information, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@billzy.com">support@billzy.com</a><br />
+        <p><strong>Email:</strong> <a href="mailto:support@billzy1.com">support@billzy1.com</a><br />
         <strong>Company:</strong> Billzy</p>
       </div>
     </section>

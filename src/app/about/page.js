@@ -105,7 +105,7 @@ export default function About() {
                 <h4>Contact</h4>
                 <p>
                   Phone: <a href="tel:888-331-9521">888-331-9521</a><br />
-                  Email: <a href="mailto:support@billzy.com">support@billzy.com</a>
+                  Email: <a href="mailto:support@billzy1.com">support@billzy1.com</a>
                 </p>
               </div>
             </div>
