@@ -19,38 +19,10 @@ export default function About() {
       {/* Company Overview */}
       <section className="about-content">
         <div className="container">
-          <div className="about-grid">
-            <div className="about-text">
-              <h2>Who We Are</h2>
-              <p>Billzy is a licensed independent financial services company based in Henderson, Nevada, operating on a national scale. We specialize in the acquisition and management of non-performing portfolios, bringing expertise and tailored strategies to every engagement.</p>
-              <p>Our commitment to excellence and results-driven approach has established us as a trusted partner in the financial services industry. We understand that every portfolio is unique, and we create customized solutions that drive optimal financial outcomes.</p>
-            </div>
-            <div className="about-image">
-              <div className="image-placeholder">
-                <span>Company Image</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Focus */}
-      <section className="our-focus">
-        <div className="container">
-          <h2>Our Focus</h2>
-          <div className="focus-grid">
-            <div className="focus-item">
-              <h3>Portfolio Acquisition</h3>
-              <p>We specialize in the strategic acquisition of non-performing portfolios, conducting thorough due diligence and market analysis to identify opportunities that align with our clients' objectives.</p>
-            </div>
-            <div className="focus-item">
-              <h3>Portfolio Management</h3>
-              <p>Our expert team implements comprehensive management strategies designed to maximize recovery rates and optimize financial performance across all portfolio types.</p>
-            </div>
-            <div className="focus-item">
-              <h3>Tailored Strategies</h3>
-              <p>We develop customized approaches based on the unique characteristics of each portfolio, ensuring strategies are aligned with specific goals and market conditions.</p>
-            </div>
+          <div className="about-text" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+            <h2>Who We Are</h2>
+            <p>Billzy is a licensed independent financial services company based in Henderson, Nevada, operating on a national scale. We specialize in the acquisition and management of non-performing portfolios, bringing expertise and tailored strategies to every engagement.</p>
+            <p>Our commitment to excellence and results-driven approach has established us as a trusted partner in the financial services industry. We understand that every portfolio is unique, and we create customized solutions that drive optimal financial outcomes.</p>
           </div>
         </div>
       </section>
@@ -88,7 +60,7 @@ export default function About() {
       <section className="location-section">
         <div className="container">
           <div className="location-content">
-            <div className="location-text">
+            <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
               <h2>Our Location</h2>
               <p>Based in Henderson, Nevada, we serve clients nationwide with our comprehensive financial services expertise.</p>
               <div className="location-details">
@@ -107,11 +79,6 @@ export default function About() {
                   Phone: <a href="tel:888-331-9521">888-331-9521</a><br />
                   Email: <a href="mailto:support@billzy1.com">support@billzy1.com</a>
                 </p>
-              </div>
-            </div>
-            <div className="location-image">
-              <div className="image-placeholder">
-                <span>Office Location Map</span>
               </div>
             </div>
           </div>
