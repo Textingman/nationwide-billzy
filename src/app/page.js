@@ -1,0 +1,94 @@
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="container">
+          <div className="hero-content">
+            <h1>Transforming Non-Performing Portfolios Into Financial Success</h1>
+            <p className="hero-subtitle">
+              Licensed independent financial services company operating nationwide with expertise in acquiring and managing non-performing portfolios
+            </p>
+            <Link href="/contact" className="btn btn-primary">
+              Get Started Today
+            </Link>
+          </div>
+          <div className="hero-image">
+            <div className="image-placeholder">
+              <span>Hero Image</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="services">
+        <div className="container">
+          <h2>Our Expertise</h2>
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">📊</div>
+              </div>
+              <h3>Portfolio Acquisition</h3>
+              <p>Strategic acquisition of non-performing portfolios with comprehensive due diligence and market analysis</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">💼</div>
+              </div>
+              <h3>Portfolio Management</h3>
+              <p>Expert management strategies designed to maximize recovery and optimize financial outcomes</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">📈</div>
+              </div>
+              <h3>Tailored Solutions</h3>
+              <p>Customized strategies that drive optimal results based on your unique portfolio characteristics</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="why-choose">
+        <div className="container">
+          <div className="why-choose-content">
+            <div className="why-choose-text">
+              <h2>Why Choose Billzy?</h2>
+              <ul className="benefits-list">
+                <li>✓ Licensed and regulated financial services company</li>
+                <li>✓ National scale operations from Henderson, Nevada</li>
+                <li>✓ Proven expertise in non-performing portfolio management</li>
+                <li>✓ Tailored strategies for optimal financial results</li>
+                <li>✓ Transparent communication and reporting</li>
+              </ul>
+              <Link href="/about" className="btn btn-secondary">
+                Learn More About Us
+              </Link>
+            </div>
+            <div className="why-choose-image">
+              <div className="image-placeholder">
+                <span>Why Choose Us Image</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="cta-section">
+        <div className="container">
+          <h2>Ready to Optimize Your Portfolio?</h2>
+          <p>Contact us today to discuss how we can help you achieve optimal financial results</p>
+          <Link href="/contact" className="btn btn-primary">
+            Contact Us Now
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}

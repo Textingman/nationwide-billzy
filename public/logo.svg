@@ -1,0 +1,18 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="#4CAF50" opacity="0.1"/>
+  
+  <!-- Dollar sign icon -->
+  <path d="M30 10 L30 50 M20 18 Q30 15 40 18 M20 30 Q30 27 40 30 M20 42 Q30 45 40 42" 
+        stroke="#4CAF50" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Company name -->
+  <text x="65" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333333">
+    Billzy
+  </text>
+  
+  <!-- Tagline -->
+  <text x="65" y="52" font-family="Arial, sans-serif" font-size="9" fill="#666666">
+    Financial Services Excellence
+  </text>
+</svg>
