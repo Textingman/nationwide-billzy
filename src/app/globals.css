@@ -256,6 +256,17 @@ body {
     color: var(--text-dark);
 }
 
+.why-choose-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-image img {
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
 .why-choose-image .image-placeholder {
     background-color: var(--bg-white);
     border: 2px dashed var(--border-color);

@@ -77,9 +77,13 @@ export default function Home() {
               </Link>
             </div>
             <div className="why-choose-image">
-              <div className="image-placeholder">
-                <span>Why Choose Us Image</span>
-              </div>
+              <Image 
+                src="/why-choose-image.png" 
+                alt="Why Choose Billzy" 
+                width={600} 
+                height={400}
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+              />
             </div>
           </div>
         </div>
