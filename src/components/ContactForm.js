@@ -59,8 +59,9 @@ export default function ContactForm() {
       return;
     }
 
-    if (!validatePhone(formData.phone)) {
-      alert('Please enter a valid phone number.');
+    // Only validate phone if it's provided
+    if (formData.phone && !validatePhone(formData.phone)) {
+      alert('Please enter a valid 10-digit phone number.');
       return;
     }
 
@@ -128,14 +129,13 @@ export default function ContactForm() {
 
       <div className="form-row">
         <div className="form-group">
-          <label htmlFor="phone">Phone Number *</label>
+          <label htmlFor="phone">Phone Number (Optional)</label>
           <input
             type="tel"
             id="phone"
             value={formData.phone}
             onChange={handlePhoneChange}
             placeholder="(555) 555-5555"
-            required
           />
           <p className="form-hint">Format: (555) 555-5555</p>
         </div>
