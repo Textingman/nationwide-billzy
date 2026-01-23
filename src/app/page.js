@@ -59,36 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="why-choose">
-        <div className="container">
-          <div className="why-choose-content">
-            <div className="why-choose-text">
-              <h2>Why Choose Billzy?</h2>
-              <ul className="benefits-list">
-                <li>✓ Licensed and regulated financial services company</li>
-                <li>✓ National scale operations from Henderson, Nevada</li>
-                <li>✓ Proven expertise in non-performing portfolio management</li>
-                <li>✓ Tailored strategies for optimal financial results</li>
-                <li>✓ Transparent communication and reporting</li>
-              </ul>
-              <Link href="/about" className="btn btn-secondary">
-                Learn More About Us
-              </Link>
-            </div>
-            <div className="why-choose-image">
-              <Image 
-                src="/why-choose-image.png" 
-                alt="Why Choose Billzy" 
-                width={600} 
-                height={400}
-                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
