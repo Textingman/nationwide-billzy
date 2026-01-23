@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -16,9 +17,14 @@ export default function Home() {
             </Link>
           </div>
           <div className="hero-image">
-            <div className="image-placeholder">
-              <span>Hero Image</span>
-            </div>
+            <Image 
+              src="/hero-image.png" 
+              alt="Billzy Financial Services" 
+              width={600} 
+              height={400}
+              priority
+              style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+            />
           </div>
         </div>
       </section>

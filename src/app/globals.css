@@ -110,6 +110,17 @@ body {
     margin-bottom: 2rem;
 }
 
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
 .hero-image .image-placeholder {
     background-color: var(--bg-white);
     border: 2px dashed var(--border-color);
