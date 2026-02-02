@@ -12,6 +12,7 @@ export default function ContactForm() {
     marketingTexts: false,
     customerCareTexts: false,
     accountTexts: false,
+    agreeToTerms: false,
   });
 
   const validateEmail = (email) => {
@@ -70,6 +71,11 @@ export default function ContactForm() {
       return;
     }
 
+    if (!formData.agreeToTerms) {
+      alert('Please agree to the terms of website use and privacy policy.');
+      return;
+    }
+
     const submissionData = {
       ...formData,
       timestamp: new Date().toISOString(),
@@ -88,6 +94,7 @@ export default function ContactForm() {
       marketingTexts: false,
       customerCareTexts: false,
       accountTexts: false,
+      agreeToTerms: false,
     });
   };
 
@@ -154,9 +161,14 @@ export default function ContactForm() {
       </div>
 
       <div className="sms-preferences">
-        <h3>SMS Text Message Preferences</h3>
+        <h3>SMS Text Message Opt-In</h3>
         
-        <div className="checkbox-group">
+        <p className="form-info">
+          By providing your mobile number and opting in below, you authorize Billzy to send you text messages. 
+          Standard message and data rates may apply.
+        </p>
+
+        <div className="checkbox-container">
           <label className="checkbox-label">
             <input
               type="checkbox"
@@ -165,13 +177,17 @@ export default function ContactForm() {
               onChange={(e) => setFormData({ ...formData, marketingTexts: e.target.checked })}
             />
             <span className="checkbox-text">
-              I consent to receive marketing and promotional text messages from Billzy at the phone number provided above. 
-              Message frequency varies. Message and data rates may apply.
+              I consent to receive recurring marketing and promotional text messages from Billzy. 
+              Message frequency varies. Message and data rates may apply. 
+              Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
+              <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
+              <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. 
+              Consent is not required as a condition of purchase.
             </span>
           </label>
         </div>
 
-        <div className="checkbox-group">
+        <div className="checkbox-container">
           <label className="checkbox-label">
             <input
               type="checkbox"
@@ -180,12 +196,17 @@ export default function ContactForm() {
               onChange={(e) => setFormData({ ...formData, customerCareTexts: e.target.checked })}
             />
             <span className="checkbox-text">
-              I consent to receive customer care and service-related text messages from Billzy at the phone number provided above.
+              I consent to receive transactional text messages from Billzy, including form completion reminders, 
+              account notifications, and customer care messages. Messages sent as needed. Message and data rates may apply. 
+              Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
+              <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
+              <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. 
+              Consent is not required as a condition of purchase.
             </span>
           </label>
         </div>
 
-        <div className="checkbox-group">
+        <div className="checkbox-container">
           <label className="checkbox-label">
             <input
               type="checkbox"
@@ -194,16 +215,27 @@ export default function ContactForm() {
               onChange={(e) => setFormData({ ...formData, accountTexts: e.target.checked })}
             />
             <span className="checkbox-text">
-              I consent to receive account-related text messages from Billzy at the phone number provided above.
+              I consent to receive promotional emails from Billzy. You can unsubscribe at any time 
+              by following the unsubscribe link in our emails or by contacting support@billzy1.com.
             </span>
           </label>
         </div>
+      </div>
 
-        <p className="form-disclaimer">
-          You can opt out at any time by replying STOP to any text message. For help, reply HELP. 
-          By providing your phone number and checking these boxes, you agree to receive text messages from Billzy. 
-          Your consent is not a condition of purchase.
-        </p>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            id="agreeToTerms"
+            checked={formData.agreeToTerms}
+            onChange={(e) => setFormData({ ...formData, agreeToTerms: e.target.checked })}
+            required
+          />
+          <span className="checkbox-text">
+            I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> and{' '}
+            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. *
+          </span>
+        </label>
       </div>
 
       <button type="submit" className="btn btn-primary btn-large">

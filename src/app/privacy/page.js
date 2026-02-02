@@ -59,7 +59,7 @@ export default function Privacy() {
         <p>Processing of Personal Information is based on one or more of the following legal grounds, where applicable:</p>
         <ul>
           <li>Your consent</li>
-          <li>Performance of a contract</li>
+          <li>Performance of acontract</li>
           <li>Legal obligation</li>
           <li>Legitimate business interests</li>
         </ul>
