@@ -4,22 +4,17 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section - Traditional Wealth Management */}
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>Your Wealth, Monitored 24/7 by AI</h1>
+            <h1>Expert Wealth Management for Every Stage of Life</h1>
             <p className="hero-subtitle">
-              Billzy helps consumers take control of their financial future. Our AI assistant continuously monitors your assets, alerts you to opportunities worth doubling down on, and flags anything that could become a liability before it costs you.
+              Billzy provides personalized financial guidance to help you grow, protect, and preserve your wealth. From portfolio management to retirement planning, our licensed professionals are here to help you build lasting financial security.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/contact" className="btn btn-primary">
-                Get Early Access
-              </Link>
-              <Link href="/about" className="btn btn-secondary">
-                Learn More
-              </Link>
-            </div>
+            <Link href="/contact-us" className="btn btn-primary">
+              Contact Us
+            </Link>
           </div>
           <div className="hero-image">
             <Image
@@ -41,9 +36,9 @@ export default function Home() {
             Introducing the Billzy AI Assistant
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.92)', maxWidth: '680px', margin: '0 auto 1.5rem', fontSize: '1.05rem', lineHeight: '1.6' }}>
-            Our AI assistant monitors your financial portfolio in real time. Get instant alerts when an asset needs attention, when you have an opportunity to maximize returns, or when something is at risk of becoming a liability.
+            Our new AI assistant monitors your financial portfolio in real time. Get instant alerts when an asset needs attention, when you have an opportunity to maximize returns, or when something is at risk of becoming a liability.
           </p>
-          <Link href="/contact" className="btn" style={{ background: '#fff', color: '#4CAF50', fontWeight: '700', border: '2px solid #fff', padding: '12px 28px', borderRadius: '6px', textDecoration: 'none', display: 'inline-block' }}>
+          <Link href="/early-access" className="btn" style={{ background: '#fff', color: '#4CAF50', fontWeight: '700', border: '2px solid #fff', padding: '12px 28px', borderRadius: '6px', textDecoration: 'none', display: 'inline-block' }}>
             Get Early Access
           </Link>
         </div>
@@ -52,28 +47,28 @@ export default function Home() {
       {/* Services Overview */}
       <section className="services">
         <div className="container">
-          <h2>How Billzy Works For You</h2>
+          <h2>Our Wealth Management Services</h2>
           <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">
-                <div className="icon-placeholder">📈</div>
-              </div>
-              <h3>Asset Opportunity Alerts</h3>
-              <p>Billzy identifies assets in your portfolio that are performing well and flags opportunities to increase your position before the window closes.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">
-                <div className="icon-placeholder">⚠️</div>
-              </div>
-              <h3>Liability Risk Detection</h3>
-              <p>Our AI monitors for early warning signs — assets that are underperforming, mismanaged, or trending toward becoming a financial liability.</p>
-            </div>
             <div className="service-card">
               <div className="service-icon">
                 <div className="icon-placeholder">📊</div>
               </div>
-              <h3>Wealth Management Guidance</h3>
-              <p>Personalized recommendations from licensed financial professionals, backed by AI-driven data analysis across your entire portfolio.</p>
+              <h3>Portfolio Management</h3>
+              <p>Strategic investment management tailored to your financial goals, risk tolerance, and time horizon. We actively monitor and rebalance your portfolio to maximize long-term performance.</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">🏦</div>
+              </div>
+              <h3>Retirement Planning</h3>
+              <p>Comprehensive retirement strategies designed to ensure you have the income and security you need throughout your retirement years. Start planning today for a confident tomorrow.</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">🛡️</div>
+              </div>
+              <h3>Asset Protection</h3>
+              <p>Protect what you've built with proven strategies to shield your assets from risk, liability, and market volatility. Our advisors help you preserve wealth for future generations.</p>
             </div>
           </div>
         </div>
@@ -82,10 +77,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2>Stop Leaving Money on the Table</h2>
-          <p>Most people don't know which of their assets are working for them and which ones are quietly draining value. Billzy changes that.</p>
-          <Link href="/contact" className="btn btn-primary">
-            Get Early Access
+          <h2>Ready to Take Control of Your Financial Future?</h2>
+          <p>Speak with a licensed Billzy advisor today and get a personalized wealth management plan built around your goals.</p>
+          <Link href="/contact-us" className="btn btn-primary">
+            Contact Us
           </Link>
         </div>
       </section>
