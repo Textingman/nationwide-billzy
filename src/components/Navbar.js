@@ -28,12 +28,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/contact-us" className={pathname === '/contact-us' ? 'active' : ''}>
+              <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>
+              <Link href="/request-consultation" className={pathname === '/request-consultation' ? 'active' : ''}>
                 Request Consultation
               </Link>
             </li>
