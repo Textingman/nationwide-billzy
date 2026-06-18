@@ -32,7 +32,7 @@ export default function ContactUs() {
 
           <div>
             <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>Send a Message</h2>
-            <form className="contact-form" action="mailto:support@billzy1.com" method="post" encType="text/plain">
+            <form className="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
                 <input type="text" id="name" name="name" required />
@@ -43,7 +43,24 @@ export default function ContactUs() {
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message *</label>
-                <textarea id="message" name="message" rows={5} required style={{ width: "100%", padding: "0.75rem", borderRadius: "6px", border: "1px solid var(--border)", fontSize: "1rem", fontFamily: "inherit", resize: "vertical" }} />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5}
+                  required
+                  style={{
+                    width: '100%',
+                    padding: '12px 16px',
+                    border: '1px solid #d1d5db',
+                    borderRadius: '6px',
+                    fontSize: '1rem',
+                    fontFamily: 'inherit',
+                    resize: 'vertical',
+                    boxSizing: 'border-box',
+                    backgroundColor: '#fff',
+                    color: '#111827',
+                  }}
+                />
               </div>
               <button type="submit" className="btn btn-primary">
                 Send Message
