@@ -35,15 +35,15 @@ export default function Home() {
       </section>
 
       {/* AI Assistant Banner */}
-      <section style={{ background: 'var(--primary)', color: '#fff', padding: '2rem 0' }}>
+      <section style={{ background: '#4CAF50', color: '#fff', padding: '2.5rem 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
-          <h2 style={{ color: '#fff', marginBottom: '0.75rem', fontSize: '1.5rem' }}>
-            🤖 Introducing the Billzy AI Assistant
+          <h2 style={{ color: '#fff', marginBottom: '0.75rem', fontSize: '1.5rem', fontWeight: '700' }}>
+            Introducing the Billzy AI Assistant
           </h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '700px', margin: '0 auto 1.25rem' }}>
-            Our new AI assistant monitors your financial portfolio in real time. Get instant alerts when an asset needs attention, when you have an opportunity to maximize returns, or when something is at risk of becoming a liability.
+          <p style={{ color: 'rgba(255,255,255,0.92)', maxWidth: '680px', margin: '0 auto 1.5rem', fontSize: '1.05rem', lineHeight: '1.6' }}>
+            Our AI assistant monitors your financial portfolio in real time. Get instant alerts when an asset needs attention, when you have an opportunity to maximize returns, or when something is at risk of becoming a liability.
           </p>
-          <Link href="/contact" className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: '600' }}>
+          <Link href="/contact" className="btn" style={{ background: '#fff', color: '#4CAF50', fontWeight: '700', border: '2px solid #fff', padding: '12px 28px', borderRadius: '6px', textDecoration: 'none', display: 'inline-block' }}>
             Get Early Access
           </Link>
         </div>
