@@ -160,66 +160,57 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <div className="sms-preferences">
-        <h3>SMS Text Message Opt-In</h3>
-        
-        <p className="form-info">
-          By providing your mobile number and opting in below, you authorize Billzy to send you text messages. 
-          Standard message and data rates may apply.
-        </p>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            id="marketingTexts"
+            checked={formData.marketingTexts}
+            onChange={(e) => setFormData({ ...formData, marketingTexts: e.target.checked })}
+          />
+          <span className="checkbox-text">
+            I consent to receive recurring marketing and promotional text messages from Billzy.
+            Message frequency varies. Message and data rates may apply.
+            Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
+            <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
+            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            Consent is not required as a condition of purchase.
+          </span>
+        </label>
+      </div>
 
-        <div className="checkbox-container">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              id="marketingTexts"
-              checked={formData.marketingTexts}
-              onChange={(e) => setFormData({ ...formData, marketingTexts: e.target.checked })}
-            />
-            <span className="checkbox-text">
-              I consent to receive recurring marketing and promotional text messages from Billzy. 
-              Message frequency varies. Message and data rates may apply. 
-              Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
-              <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
-              <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. 
-              Consent is not required as a condition of purchase.
-            </span>
-          </label>
-        </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            id="customerCareTexts"
+            checked={formData.customerCareTexts}
+            onChange={(e) => setFormData({ ...formData, customerCareTexts: e.target.checked })}
+          />
+          <span className="checkbox-text">
+            I consent to receive transactional text messages from Billzy, including account notifications
+            and customer care messages. Messages sent as needed. Message and data rates may apply.
+            Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
+            <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
+            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            Consent is not required as a condition of purchase.
+          </span>
+        </label>
+      </div>
 
-        <div className="checkbox-container">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              id="customerCareTexts"
-              checked={formData.customerCareTexts}
-              onChange={(e) => setFormData({ ...formData, customerCareTexts: e.target.checked })}
-            />
-            <span className="checkbox-text">
-              I consent to receive transactional text messages from Billzy, including form completion reminders, 
-              account notifications, and customer care messages. Messages sent as needed. Message and data rates may apply. 
-              Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
-              <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
-              <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. 
-              Consent is not required as a condition of purchase.
-            </span>
-          </label>
-        </div>
-
-        <div className="checkbox-container">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              id="accountTexts"
-              checked={formData.accountTexts}
-              onChange={(e) => setFormData({ ...formData, accountTexts: e.target.checked })}
-            />
-            <span className="checkbox-text">
-              I consent to receive promotional emails from Billzy. You can unsubscribe at any time 
-              by following the unsubscribe link in our emails or by contacting support@billzy1.com.
-            </span>
-          </label>
-        </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            id="accountTexts"
+            checked={formData.accountTexts}
+            onChange={(e) => setFormData({ ...formData, accountTexts: e.target.checked })}
+          />
+          <span className="checkbox-text">
+            I consent to receive promotional emails from Billzy. You can unsubscribe at any time
+            by following the unsubscribe link in our emails or by contacting support@billzy1.com.
+          </span>
+        </label>
       </div>
 
       <div className="checkbox-container">
