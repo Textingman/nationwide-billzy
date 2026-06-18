@@ -8,19 +8,24 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>Transforming Non-Performing Portfolios Into Financial Success</h1>
+            <h1>Your Wealth, Monitored 24/7 by AI</h1>
             <p className="hero-subtitle">
-              Licensed independent financial services company operating nationwide with expertise in acquiring and managing non-performing portfolios
+              Billzy helps consumers take control of their financial future. Our AI assistant continuously monitors your assets, alerts you to opportunities worth doubling down on, and flags anything that could become a liability before it costs you.
             </p>
-            <Link href="/contact" className="btn btn-primary">
-              Get Started Today
-            </Link>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <Link href="/contact" className="btn btn-primary">
+                Request Consultation
+              </Link>
+              <Link href="/about" className="btn btn-secondary">
+                Learn More
+              </Link>
+            </div>
           </div>
           <div className="hero-image">
-            <Image 
-              src="/hero-image.png" 
-              alt="Billzy Financial Services" 
-              width={600} 
+            <Image
+              src="/hero-image.png"
+              alt="Billzy Wealth Management"
+              width={600}
               height={400}
               priority
               style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
@@ -29,31 +34,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI Assistant Banner */}
+      <section style={{ background: 'var(--primary)', color: '#fff', padding: '2rem 0' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <h2 style={{ color: '#fff', marginBottom: '0.75rem', fontSize: '1.5rem' }}>
+            🤖 Introducing the Billzy AI Assistant
+          </h2>
+          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '700px', margin: '0 auto 1.25rem' }}>
+            Our new AI assistant monitors your financial portfolio in real time. Get instant alerts when an asset needs attention, when you have an opportunity to maximize returns, or when something is at risk of becoming a liability.
+          </p>
+          <Link href="/contact" className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: '600' }}>
+            Get Early Access
+          </Link>
+        </div>
+      </section>
+
       {/* Services Overview */}
       <section className="services">
         <div className="container">
-          <h2>Our Expertise</h2>
+          <h2>How Billzy Works For You</h2>
           <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">
-                <div className="icon-placeholder">📊</div>
-              </div>
-              <h3>Portfolio Acquisition</h3>
-              <p>Strategic acquisition of non-performing portfolios with comprehensive due diligence and market analysis</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">
-                <div className="icon-placeholder">💼</div>
-              </div>
-              <h3>Portfolio Management</h3>
-              <p>Expert management strategies designed to maximize recovery and optimize financial outcomes</p>
-            </div>
             <div className="service-card">
               <div className="service-icon">
                 <div className="icon-placeholder">📈</div>
               </div>
-              <h3>Tailored Solutions</h3>
-              <p>Customized strategies that drive optimal results based on your unique portfolio characteristics</p>
+              <h3>Asset Opportunity Alerts</h3>
+              <p>Billzy identifies assets in your portfolio that are performing well and flags opportunities to increase your position before the window closes.</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">⚠️</div>
+              </div>
+              <h3>Liability Risk Detection</h3>
+              <p>Our AI monitors for early warning signs — assets that are underperforming, mismanaged, or trending toward becoming a financial liability.</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+                <div className="icon-placeholder">📊</div>
+              </div>
+              <h3>Wealth Management Guidance</h3>
+              <p>Personalized recommendations from licensed financial professionals, backed by AI-driven data analysis across your entire portfolio.</p>
             </div>
           </div>
         </div>
@@ -62,10 +82,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2>Ready to Optimize Your Portfolio?</h2>
-          <p>Contact us today to discuss how we can help you achieve optimal financial results</p>
+          <h2>Stop Leaving Money on the Table</h2>
+          <p>Most people don't know which of their assets are working for them and which ones are quietly draining value. Billzy changes that.</p>
           <Link href="/contact" className="btn btn-primary">
-            Contact Us Now
+            Request a Free Consultation
           </Link>
         </div>
       </section>
