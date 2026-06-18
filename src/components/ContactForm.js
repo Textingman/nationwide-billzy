@@ -159,14 +159,6 @@ export default function ContactForm() {
       </div>
 
       <div className="sms-preferences">
-        <h3>SMS Text Message Opt-In</h3>
-
-        <p className="form-info">
-          By providing your mobile number and checking a box below, you authorize Billzy to send you text messages.
-          Opting in to SMS is optional and not required to submit this form or use our services.
-          Message and data rates may apply.
-        </p>
-
         <div className="checkbox-container">
           <label className="checkbox-label">
             <input
