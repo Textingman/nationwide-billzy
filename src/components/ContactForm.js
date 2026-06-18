@@ -9,9 +9,8 @@ export default function ContactForm() {
     firstName: '',
     lastName: '',
     zipCode: '',
+    alertsTexts: false,
     marketingTexts: false,
-    customerCareTexts: false,
-    accountTexts: false,
     agreeToTerms: false,
   });
 
@@ -31,7 +30,7 @@ export default function ContactForm() {
 
   const formatPhoneNumber = (value) => {
     const digits = value.replace(/\D/g, '').slice(0, 10);
-    
+
     if (digits.length >= 6) {
       return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
     } else if (digits.length >= 3) {
@@ -91,9 +90,8 @@ export default function ContactForm() {
       firstName: '',
       lastName: '',
       zipCode: '',
+      alertsTexts: false,
       marketingTexts: false,
-      customerCareTexts: false,
-      accountTexts: false,
       agreeToTerms: false,
     });
   };
@@ -160,57 +158,48 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <div className="checkbox-container">
-        <label className="checkbox-label">
-          <input
-            type="checkbox"
-            id="marketingTexts"
-            checked={formData.marketingTexts}
-            onChange={(e) => setFormData({ ...formData, marketingTexts: e.target.checked })}
-          />
-          <span className="checkbox-text">
-            I consent to receive recurring marketing and promotional text messages from Billzy.
-            Message frequency varies. Message and data rates may apply.
-            Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
-            <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
-            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
-            Consent is not required as a condition of purchase.
-          </span>
-        </label>
-      </div>
+      <div className="sms-preferences">
+        <h3>SMS Text Message Opt-In</h3>
 
-      <div className="checkbox-container">
-        <label className="checkbox-label">
-          <input
-            type="checkbox"
-            id="customerCareTexts"
-            checked={formData.customerCareTexts}
-            onChange={(e) => setFormData({ ...formData, customerCareTexts: e.target.checked })}
-          />
-          <span className="checkbox-text">
-            I consent to receive transactional text messages from Billzy, including account notifications
-            and customer care messages. Messages sent as needed. Message and data rates may apply.
-            Reply STOP to cancel or HELP for help. By opting in, you agree to our{' '}
-            <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and{' '}
-            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
-            Consent is not required as a condition of purchase.
-          </span>
-        </label>
-      </div>
+        <p className="form-info">
+          By providing your mobile number and checking a box below, you authorize Billzy to send you text messages.
+          Opting in to SMS is optional and not required to submit this form or use our services.
+          Message and data rates may apply.
+        </p>
 
-      <div className="checkbox-container">
-        <label className="checkbox-label">
-          <input
-            type="checkbox"
-            id="accountTexts"
-            checked={formData.accountTexts}
-            onChange={(e) => setFormData({ ...formData, accountTexts: e.target.checked })}
-          />
-          <span className="checkbox-text">
-            I consent to receive promotional emails from Billzy. You can unsubscribe at any time
-            by following the unsubscribe link in our emails or by contacting support@billzy1.com.
-          </span>
-        </label>
+        <div className="checkbox-container">
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              id="alertsTexts"
+              checked={formData.alertsTexts}
+              onChange={(e) => setFormData({ ...formData, alertsTexts: e.target.checked })}
+            />
+            <span className="checkbox-text">
+              By checking this box and submitting this form, you consent to receive account alert and notification
+              text messages from Billzy at the number provided, including account status updates and payment
+              notifications. Consent is not a condition of purchase or service. Message &amp; data rates may apply.
+              Message frequency varies. Reply STOP to unsubscribe or HELP for assistance.
+            </span>
+          </label>
+        </div>
+
+        <div className="checkbox-container">
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              id="marketingTexts"
+              checked={formData.marketingTexts}
+              onChange={(e) => setFormData({ ...formData, marketingTexts: e.target.checked })}
+            />
+            <span className="checkbox-text">
+              By checking this box and submitting this form, you consent to receive recurring marketing and
+              promotional text messages from Billzy at the number provided, including special offers and account
+              savings opportunities. Consent is not a condition of purchase or service. Message &amp; data rates
+              may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for assistance.
+            </span>
+          </label>
+        </div>
       </div>
 
       <div className="checkbox-container">
@@ -223,14 +212,14 @@ export default function ContactForm() {
             required
           />
           <span className="checkbox-text">
-            I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> and{' '}
+            I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a> and{' '}
             <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. *
           </span>
         </label>
       </div>
 
       <button type="submit" className="btn btn-primary btn-large">
-        Request Consultation
+        Submit Contact Request
       </button>
     </form>
   );
