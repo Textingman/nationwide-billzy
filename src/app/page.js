@@ -14,7 +14,7 @@ export default function Home() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link href="/contact" className="btn btn-primary">
-                Request Consultation
+                Get Early Access
               </Link>
               <Link href="/about" className="btn btn-secondary">
                 Learn More
@@ -85,7 +85,7 @@ export default function Home() {
           <h2>Stop Leaving Money on the Table</h2>
           <p>Most people don't know which of their assets are working for them and which ones are quietly draining value. Billzy changes that.</p>
           <Link href="/contact" className="btn btn-primary">
-            Request a Free Consultation
+            Get Early Access
           </Link>
         </div>
       </section>
