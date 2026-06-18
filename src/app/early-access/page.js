@@ -1,17 +1,8 @@
 "use client";
 import Link from 'next/link';
-import { useState } from 'react';
+import ContactForm from '@/components/ContactForm';
 
 export default function EarlyAccess() {
-  const [submitted, setSubmitted] = useState(false);
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
   return (
     <>
       {/* Hero */}
@@ -58,37 +49,14 @@ export default function EarlyAccess() {
         </div>
       </section>
 
-      {/* Sign Up */}
+      {/* Sign Up with SMS Opt-In */}
       <section style={{ padding: '4rem 0', background: '#fff' }}>
-        <div className="container" style={{ maxWidth: '560px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ marginBottom: '0.75rem' }}>Join the Early Access List</h2>
-          <p style={{ color: '#666', marginBottom: '2rem', lineHeight: '1.6' }}>
-            Be among the first to access the Billzy AI Assistant when it launches. Early access members receive priority onboarding and exclusive features.
+        <div className="container-small">
+          <h2 style={{ textAlign: 'center', marginBottom: '0.75rem' }}>Get Early Access</h2>
+          <p style={{ textAlign: 'center', color: '#666', marginBottom: '2.5rem', lineHeight: '1.6' }}>
+            Be among the first to access the Billzy AI Assistant when it launches. Sign up below to join the early access list and opt in to receive AI-powered account alerts and updates via SMS.
           </p>
-          {submitted ? (
-            <div style={{ background: '#e8f5e9', border: '1px solid #4CAF50', borderRadius: '8px', padding: '2rem', color: '#2e7d32' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>✅</div>
-              <h3 style={{ color: '#2e7d32', marginBottom: '0.5rem' }}>You are on the list!</h3>
-              <p>We will reach out as soon as early access opens. Keep an eye on your inbox.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <div className="form-group">
-                <label htmlFor="ea-name">Full Name *</label>
-                <input type="text" id="ea-name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Your name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="ea-email">Email Address *</label>
-                <input type="email" id="ea-email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="your@email.com" />
-              </div>
-              <button type="submit" className="btn btn-primary btn-large" style={{ marginTop: '0.5rem' }}>
-                Request Early Access
-              </button>
-              <p style={{ fontSize: '0.85rem', color: '#999', marginTop: '0.5rem' }}>
-                No spam. We will only contact you about early access.
-              </p>
-            </form>
-          )}
+          <ContactForm />
         </div>
       </section>
 
