@@ -156,29 +156,37 @@ export default function EarlyAccess() {
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#2e7d32', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📈 Opportunity Alert</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your Henderson property is up 18% this quarter. This may be a good time to review your position. Reply STOP to opt out. Msg & data rates may apply.
+                Alex, your Henderson property is up 18% this quarter. This may be a good time to review your position. Reply YES and I'll flag it for your advisor. Reply STOP to opt out. Msg & data rates may apply.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#e65100', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>⚠️ Liability Alert</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your EZ Pass account has an unpaid balance that is 38 days past due. Please review to avoid penalties. Reply STOP to opt out. Msg & data rates may apply.
+                Alex, your EZ Pass account has an unpaid balance that is 38 days past due. Reply YES and I'll handle the resolution for you. Reply STOP to opt out. Msg & data rates may apply.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#1565c0', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>🔔 Account Update</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your savings balance has dropped below your $10,000 alert threshold. Log in to review. Reply STOP to opt out. Msg & data rates may apply.
+                Alex, your savings balance has dropped below your $10,000 threshold. Reply YES and I'll review your accounts and send you a summary. Reply STOP to opt out. Msg & data rates may apply.
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#2e7d32', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📈 Billie Takes Action</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                Alex, you replied YES — I've flagged your Henderson property opportunity with your advisor and scheduled a review for this week. I'll keep you posted. Reply STOP to opt out.
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#e65100', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>⚠️ Billie Resolves Issue</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                Alex, you replied YES — I've initiated the EZ Pass balance resolution and notified your account team. You'll receive a confirmation once it's cleared. Reply STOP to opt out.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#6a1b9a', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>🔔 Billie Confirms Action</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your weekly summary is ready. Portfolio: $284,500 (+3.2%). 1 opportunity, 1 item needs attention. View your dashboard for details. Reply STOP to opt out.
+                Alex, you replied YES — I've reviewed your accounts and scheduled a rebalancing recommendation with your advisor. I'll send you a full update by end of day. Reply STOP to opt out.
               </div>
             </div>
           </div>
@@ -193,7 +201,7 @@ export default function EarlyAccess() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '680px', margin: '0 auto' }}>
             <div style={{ background: '#fff', border: '1px solid #e0e0e0', borderRadius: '16px', padding: '2rem' }}>
               <div style={{ fontSize: '0.8rem', fontWeight: '700', color: '#999', letterSpacing: '0.1em', marginBottom: '1rem', textTransform: 'uppercase' }}>Billie Free</div>
-              <div style={{ fontSize: '2.25rem', fontWeight: '800', color: '#111', marginBottom: '0.25rem' }}>/bin/zsh</div>
+              <div style={{ fontSize: '2.25rem', fontWeight: '800', color: '#111', marginBottom: '0.25rem' }}>$0</div>
               <div style={{ color: '#666', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Always free</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.75rem' }}>
                 {['Account monitoring & alerts', 'SMS + email notifications', 'Billie dashboard', 'Up to 5 accounts tracked', 'Weekly summary reports'].map(f => (
@@ -208,7 +216,7 @@ export default function EarlyAccess() {
               <div style={{ position: 'absolute', top: '-13px', left: '1.5rem', background: '#4CAF50', color: '#fff', borderRadius: '20px', padding: '3px 14px', fontSize: '0.75rem', fontWeight: '700' }}>RECOMMENDED</div>
               <div style={{ fontSize: '0.8rem', fontWeight: '700', color: '#4CAF50', letterSpacing: '0.1em', marginBottom: '1rem', textTransform: 'uppercase' }}>Billie Pro</div>
               <div style={{ fontSize: '2.25rem', fontWeight: '800', color: '#111', marginBottom: '0.1rem' }}>0.75% <span style={{ fontSize: '1rem', fontWeight: '400', color: '#666' }}>AUM / yr</span></div>
-              <div style={{ color: '#666', fontSize: '0.85rem', marginBottom: '1.5rem' }}>~/mo on a K portfolio</div>
+              <div style={{ color: '#666', fontSize: '0.85rem', marginBottom: '1.5rem' }}>~$156/mo on a $250K portfolio</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.75rem' }}>
                 {['Everything in Free', 'Unlimited accounts tracked', 'Billie acts on your behalf', 'Automatic issue resolution', 'Advisor coordination', 'Quarterly performance review with human expert'].map(f => (
                   <div key={f} style={{ display: 'flex', gap: '0.6rem', fontSize: '0.9rem', color: '#444', alignItems: 'center' }}>
