@@ -13,7 +13,7 @@ export default function EarlyAccess() {
             <span style={{ fontSize: '0.8rem', color: '#2e7d32', fontWeight: '700', letterSpacing: '0.08em' }}>COMING SOON</span>
           </div>
           <h1 style={{ fontSize: '3rem', fontWeight: '800', color: '#111', marginBottom: '0.5rem', lineHeight: '1.15' }}>
-            Meet Billi
+            Meet Billie
           </h1>
           <p style={{ fontSize: '1rem', color: '#4CAF50', fontWeight: '600', marginBottom: '1.25rem', letterSpacing: '0.05em' }}>
             Your AI Wealth Assistant by Billzy
