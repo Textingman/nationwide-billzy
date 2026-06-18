@@ -174,19 +174,19 @@ export default function EarlyAccess() {
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#2e7d32', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📈 Billie Takes Action</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                Alex, you replied YES — I've flagged your Henderson property opportunity with your advisor and scheduled a review for this week. I'll keep you posted. Reply STOP to opt out.
+                Alex, your Henderson property is up 18% and I've identified a window to increase your position. Reply YES and I'll coordinate with your advisor to act on this opportunity. Reply STOP to opt out.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#e65100', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>⚠️ Billie Resolves Issue</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                Alex, you replied YES — I've initiated the EZ Pass balance resolution and notified your account team. You'll receive a confirmation once it's cleared. Reply STOP to opt out.
+                Alex, your EZ Pass balance is 38 days past due and at risk of a registration hold. Reply YES and I'll initiate the resolution process with your account team on your behalf. Reply STOP to opt out.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#6a1b9a', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>🔔 Billie Confirms Action</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
-                Alex, you replied YES — I've reviewed your accounts and scheduled a rebalancing recommendation with your advisor. I'll send you a full update by end of day. Reply STOP to opt out.
+                Alex, your savings balance has dropped and your portfolio may need rebalancing. Reply YES and I'll review your accounts and schedule a recommendation with your advisor. Reply STOP to opt out.
               </div>
             </div>
           </div>
