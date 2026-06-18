@@ -8,7 +8,6 @@ export default function RequestConsultation() {
     firstName: '',
     lastName: '',
     email: '',
-    phone: '',
     consultationType: '',
     selectedDate: '',
     selectedTime: '',
@@ -155,10 +154,7 @@ export default function RequestConsultation() {
               <label htmlFor="email">Email Address *</label>
               <input type="email" id="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />
             </div>
-            <div className="form-group">
-              <label htmlFor="phone">Phone Number *</label>
-              <input type="tel" id="phone" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required placeholder="(555) 555-5555" />
-            </div>
+
             <div className="form-group">
               <label htmlFor="notes">Additional Notes (Optional)</label>
               <textarea id="notes" value={formData.notes} onChange={(e) => setFormData({ ...formData, notes: e.target.value })} rows={3} style={{ width: '100%', padding: '12px 16px', border: '1px solid #d1d5db', borderRadius: '6px', fontSize: '1rem', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} placeholder="Anything you would like us to know before the call..." />
