@@ -147,25 +147,38 @@ export default function EarlyAccess() {
         </div>
       </section>
 
-      {/* How Billi Reaches You */}
+      {/* Billi Texts You Directly — SMS Examples */}
       <section style={{ padding: '5rem 0 4rem', background: '#fff' }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>How Billi Reaches You</h2>
-          <p style={{ textAlign: 'center', color: '#666', marginBottom: '3rem' }}>Alerts via SMS, email, and your dashboard — wherever you are.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', maxWidth: '860px', margin: '0 auto' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Billi Texts You Directly</h2>
+          <p style={{ textAlign: 'center', color: '#666', marginBottom: '3rem' }}>Real-time SMS alerts for every type of account activity — straight to your phone.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', maxWidth: '960px', margin: '0 auto' }}>
             <div>
-              <div style={{ fontSize: '0.75rem', fontWeight: '700', color: '#4CAF50', letterSpacing: '0.1em', marginBottom: '0.75rem', textTransform: 'uppercase' }}>📱 SMS Alert</div>
-              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1.25rem', fontSize: '0.9rem', lineHeight: '1.7', color: '#333' }}>
-                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.5rem' }}>Billi · Billzy</div>
-                Hi Alex — Billi here. ⚠️ Your EZ Pass account has an unpaid balance that is now 38 days past due. Unresolved tolls can result in registration holds and penalties. Call (888) 331-9521 to resolve. Reply STOP to opt out.
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#2e7d32', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📈 Opportunity Alert</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billi · Billzy</div>
+                Alex, your Henderson property is up 18% this quarter. This may be a good time to review your position. Reply STOP to opt out. Msg & data rates may apply.
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.75rem', fontWeight: '700', color: '#4CAF50', letterSpacing: '0.1em', marginBottom: '0.75rem', textTransform: 'uppercase' }}>📧 Email Alert</div>
-              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1.25rem', fontSize: '0.9rem', lineHeight: '1.7', color: '#333' }}>
-                <div style={{ fontWeight: '700', marginBottom: '0.2rem' }}>Billi Alert — Opportunity in Your Portfolio</div>
-                <div style={{ color: '#999', fontSize: '0.8rem', marginBottom: '0.75rem' }}>from billi@billzy1.com</div>
-                Hi Alex, Billi has identified a high-confidence opportunity. Your Henderson real estate holding is outperforming the market by 18% YTD. This is an ideal window to increase your position. Log in to your Billi dashboard to review. — Billi
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#e65100', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>⚠️ Liability Alert</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billi · Billzy</div>
+                Alex, your EZ Pass account has an unpaid balance that is 38 days past due. Please review to avoid penalties. Reply STOP to opt out. Msg & data rates may apply.
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#1565c0', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>🔔 Account Update</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billi · Billzy</div>
+                Alex, your savings balance has dropped below your $10,000 alert threshold. Log in to review. Reply STOP to opt out. Msg & data rates may apply.
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#6a1b9a', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📊 Weekly Summary</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billi · Billzy</div>
+                Alex, your weekly summary is ready. Portfolio: $284,500 (+3.2%). 1 opportunity, 1 item needs attention. View your dashboard for details. Reply STOP to opt out.
               </div>
             </div>
           </div>
