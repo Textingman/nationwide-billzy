@@ -157,28 +157,42 @@ export default function EarlyAccess() {
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#2e7d32', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📈 Opportunity Alert</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
                 <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your Henderson property is up 18% this quarter. This may be a good time to review your position. Reply STOP to opt out. Msg & data rates may apply.
+                Alex, your Henderson property is up 18% this quarter. This may be a good time to review your position. Reply YES and I'll flag it for your advisor. Reply STOP to opt out. Msg & data rates may apply.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#e65100', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>⚠️ Liability Alert</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
                 <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your EZ Pass account has an unpaid balance that is 38 days past due. Please review to avoid penalties. Reply STOP to opt out. Msg & data rates may apply.
+                Alex, your EZ Pass account has an unpaid balance that is 38 days past due. Reply YES and I'll handle the resolution for you. Reply STOP to opt out. Msg & data rates may apply.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#1565c0', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>🔔 Account Update</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
                 <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your savings balance has dropped below your $10,000 alert threshold. Log in to review. Reply STOP to opt out. Msg & data rates may apply.
+                Alex, your savings balance has dropped below your $10,000 threshold. Reply YES and I'll review your accounts and send you a summary. Reply STOP to opt out. Msg & data rates may apply.
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#2e7d32', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📈 Billie Takes Action</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
+                Alex, you replied YES — I've flagged your Henderson property opportunity with your advisor and scheduled a review for this week. I'll keep you posted. Reply STOP to opt out.
+              </div>
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#e65100', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>⚠️ Billie Resolves Issue</div>
+              <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
+                <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
+                Alex, you replied YES — I've initiated the EZ Pass balance resolution and notified your account team. You'll receive a confirmation once it's cleared. Reply STOP to opt out.
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#6a1b9a', letterSpacing: '0.1em', marginBottom: '0.6rem', textTransform: 'uppercase' }}>📊 Weekly Summary</div>
               <div style={{ background: '#f9fafb', border: '1px solid #e0e0e0', borderRadius: '12px', padding: '1rem 1.25rem', fontSize: '0.85rem', lineHeight: '1.65', color: '#333' }}>
                 <div style={{ fontWeight: '700', color: '#4CAF50', marginBottom: '0.4rem', fontSize: '0.8rem' }}>Billie · Billzy</div>
-                Alex, your weekly summary is ready. Portfolio: $284,500 (+3.2%). 1 opportunity, 1 item needs attention. View your dashboard for details. Reply STOP to opt out.
+                Alex, your weekly summary is ready. Portfolio: $284,500 (+3.2%). 1 opportunity, 1 item needs attention. Reply YES and I'll take care of the open item for you. Reply STOP to opt out.
               </div>
             </div>
           </div>
