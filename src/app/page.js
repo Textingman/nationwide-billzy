@@ -12,7 +12,7 @@ export default function Home() {
             <p className="hero-subtitle">
               Billzy provides personalized financial guidance to help you grow, protect, and preserve your wealth. From portfolio management to retirement planning, our licensed professionals are here to help you build lasting financial security.
             </p>
-            <Link href="/contact-us" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               Contact Us
             </Link>
           </div>
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="container">
           <h2>Ready to Take Control of Your Financial Future?</h2>
           <p>Speak with a licensed Billzy advisor today and get a personalized wealth management plan built around your goals.</p>
-          <Link href="/contact-us" className="btn btn-primary">
+          <Link href="/contact" className="btn btn-primary">
             Contact Us
           </Link>
         </div>
