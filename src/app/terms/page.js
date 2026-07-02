@@ -16,14 +16,14 @@ export default function Terms() {
 
         <h2>1) SMS Terms and Conditions (Text Messaging Program)</h2>
         
-        <p>These SMS Terms apply only if you opt in to receive text messages from Billzy ("SMS Program").</p>
+        <p>These SMS Terms apply only if you opt in to receive text messages from Billzy ("SMS Program"). This program is used to send account-related alerts to opted-in users.</p>
 
         <h3>What you'll receive</h3>
         <p>Billzy may send SMS messages related to:</p>
         <ul>
-          <li>Account or customer care notifications</li>
-          <li>Service updates</li>
-          <li>Marketing or promotional messages (if you opt in)</li>
+          <li>Account monitoring alerts</li>
+          <li>Account update messages</li>
+          <li>Service updates and customer care notifications</li>
         </ul>
         <p><strong>Message frequency:</strong> varies.</p>
 

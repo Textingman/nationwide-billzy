@@ -10,7 +10,6 @@ export default function ContactForm() {
     lastName: '',
     zipCode: '',
     alertsTexts: false,
-    marketingTexts: false,
     agreeToTerms: false,
   });
 
@@ -91,7 +90,6 @@ export default function ContactForm() {
       lastName: '',
       zipCode: '',
       alertsTexts: false,
-      marketingTexts: false,
       agreeToTerms: false,
     });
   };
@@ -168,27 +166,10 @@ export default function ContactForm() {
               onChange={(e) => setFormData({ ...formData, alertsTexts: e.target.checked })}
             />
             <span className="checkbox-text">
-              By checking this box and submitting this form, you consent to receive account alert and notification
-              text messages from Billzy at the number provided, including account status updates and payment
-              notifications. Consent is not a condition of purchase or service. Message &amp; data rates may apply.
+              By checking this box and submitting this form, you consent to receive account alert text messages
+              from Billzy at the number provided, including account monitoring alerts and account update messages.
+              Consent is not a condition of purchase or service. Message &amp; data rates may apply.
               Message frequency varies. Reply STOP to unsubscribe or HELP for assistance.
-            </span>
-          </label>
-        </div>
-
-        <div className="checkbox-container">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              id="marketingTexts"
-              checked={formData.marketingTexts}
-              onChange={(e) => setFormData({ ...formData, marketingTexts: e.target.checked })}
-            />
-            <span className="checkbox-text">
-              By checking this box and submitting this form, you consent to receive recurring marketing and
-              promotional text messages from Billzy at the number provided, including special offers and account
-              savings opportunities. Consent is not a condition of purchase or service. Message &amp; data rates
-              may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for assistance.
             </span>
           </label>
         </div>
